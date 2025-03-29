@@ -14,7 +14,7 @@ function Sidebar({ isOpen, onClose, onNavigate, activeComponent }) {
       <div 
         className={`fixed lg:static inset-y-0 left-0 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } lg:translate-x-0 transition duration-300 ease-in-out bg-white w-64 shadow-lg`}
+        } lg:translate-x-0 transition duration-300 ease-in-out bg-white w-64 shadow-lg z-30`}
       >
         <div className="p-4">
           {menuItems.map(item => (

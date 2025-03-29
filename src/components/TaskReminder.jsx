@@ -107,7 +107,7 @@ function TaskReminder() {
     const taskDate = new Date(dateString);
     const now = new Date();
     const twoDaysFromNow = new Date();
-    twoDaysFromNow.setDate(now.getDate() + 2);
+    twoDaysFromNow.setDate(now.getDate() + 5);
     
     return taskDate > now && taskDate <= twoDaysFromNow;
   };
